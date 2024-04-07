@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Valor Economizado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>€100,00</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>€80,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>€180,00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Listas-->
+
+    <h1>Tipos de listas</h1>
+    <h2>Lista de Prioriedades / ol Lista ordenada</h2>
+    <ol>
+        <li>Pagar as contas;</li>
+        <li>Estudar; e</li>
+        <li>Viajar</li>
+    </ol>
+
+    <h2>Lista de Compras / ul Lista não ordenada</h2>
+    <ul>
+        <li>Arroz;</li>
+        <li>Feijão;</li>
+        <li>Tomate; e </li>
+        <li>Batata;</li>
+    </ul>
+
+    <h1>Meu Primeiro iFrame simples</h1>
+    <h2>Google</h2>
+    <iframe src="https://www.google.com/"
+                height = "300"
+                width = "550">
+    </iframe>
+
+    <h1>Meu iFrame com Alvo de links</h1>
+    <h2>Google</h2>
+    <iframe src="Alg_iFrame_TelaInicial.html"
+                name = "iframe_destino"
+                height = "300"
+                width = "550">
+    </iframe>
+
+    <p>
+        <h2>Link do iFrame</h2>
+        <a href="https://www.google.com/"
+            target = "iframe_destino">Google
+        </a>
+    </p>
+    <h1>Formulário com input e label radio</h1>
+    <form style="border:1px dashed black; padding :20px;">
+    <label for="name">Nome</label>
+    <input type="text" name="nome" id="nome">
+    <p>Escolha o seu destino</p>
+
+    <input type="radio" name="destino" id="eua">
+    <label for="eua">Estados Unidos da América</label>
+    <br>
+    <input type="radio" name="destino" id="paris">
+    <label for="paris">Paris</label>
+    <br>
+    <input type="radio" name="destino" id="cancun" checked>
+    <label for="cancun">Cancun</label>
+    
+    </form>
+    <form >
+        <h1>Formulário com input e label checkbox</h1>
+        <form style="border:1px dashed black; padding :20px;">
+        <label for="name">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <p>Escolha o seu destino</p>
+        <input type="checkbox" name="destino1" id="eua">
+        <label for="eua">Estados Unidos da América</label>
+        <br>
+        <input type="checkbox" name="destino2" id="paris">
+        <label for="paris">Paris</label>
+        <br>
+        <input type="checkbox" name="destino3" id="cancun">
+        <label for="cancun">Cancun</label>
+    </form>
+
+    <h1>Formulário com Submit</h1>
+    <form action=""
+    style="border:1px dashed black; padding :20px;">
+    <fieldset>
+        <legend>Dados Registo</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+    <h1>Formulário com Button</h1>
+    <form style="border:1px dashed black; padding :20px;">
+    <button type="button">OK</button>
+    </form>
+
+    <h1>Formulário com Select</h1>
+    <form action="" style="border:1px dashed black; padding :20px;">
+    <select name="carros" id="carros" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br>
+    <br>
+    <select name="carros" id="carros">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    </form>
+</body>
+</html>

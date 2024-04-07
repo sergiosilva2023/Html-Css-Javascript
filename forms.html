@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form style="border:1px dashed black; padding: 20px; " method="POST" action="salvaDadosFormulario.php">
+    <fieldset>
+        <legend>Dados de Registo</legend>
+        <input type="button" name="button" id="button" value="button">
+        <input type="submit" name="submit" id="submit" value="submit"><br>
+
+        Selecione uma cor : <input type="color" name="color" id="color"><br>
+        Data : <input type="date" name="tdata" id="tdata"><br>
+        Hora : <input type="time" name="thora" id="thora"><br>
+        Hora e Data Local : <input type="datetime-local" name="tdatahora-local" id="tdatahora-local"><br>
+        Mês : <input type="month" name="tmes" id="tmes"><br>
+        Semana : <input type="week" name="tweek" id="tweek"><br>
+        Email : <input type="email" name="temail" id="temail" placeholder="Digite o seu email: "><br>
+        Anexar ficheiro : <input type="file" name="tficheiro" id="tficheiro" multiple><br>
+        Número : <input type="number" name="tnumero" id="tnumero"><br>
+        Password : <input type="password" name="tpassword" id="tpassword"><br>
+        <input type="checkbox" name="veiculo" id="carro" value="Carro"><label for="carro">Carro</label>
+        <input type="checkbox" name="veiculo" id="moto" value="Moto">Moto
+        <input type="checkbox" name="veiculo" id="bicicleta" value="Bicicleta">Bicicleta<br>
+        <input type="radio" name="escolha" id="sim" value="Sim" checked>Sim
+        <input type="radio" name="escolha" id="nao" value="Não">Não
+
+    </fieldset>
+    
+    
+    
+    </form>
+    
+</body>
+</html>
