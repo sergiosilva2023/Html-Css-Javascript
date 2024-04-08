@@ -1,0 +1,22 @@
+.card {
+  background-color: gray;
+  width: 400px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card-blue {
+  background-color: rgb(13, 93, 147);
+}
+
+.card-red {
+  background-color: red;
+}
+
+.card-orange {
+  background-color: rgb(174, 116, 14);
+}
+
+body {
+  background-color: rgb(72, 72, 72);
+}
