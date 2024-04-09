@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19 - Formulário com CSS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="https://kit.fontawesome.com/c60e984cbf.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 768px;
+            margin: 0 auto;
+        }
+
+        #form {
+            background-color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+            box-shadow: 0 0 15px #999;
+        }
+
+        #form label {
+            display: block;
+        }
+
+        #form input,
+        #form select,
+        #form textarea {
+            width: 100%;
+            padding: 10px;
+        }
+
+        #form [class*=col-] {
+            padding: 10px;
+        }
+
+        #form input[type=submit] {
+            border: 2px solid rgb(255, 0, 115);
+            box-shadow: 0 0 15px;
+            border-radius: 10px;
+            color: rgb(255, 0, 115);
+            transition: all 0.5s;
+            font-size: 16px;
+        }
+
+        #form input:hover[type=submit] {
+            border-radius: 30px;
+            background-color: rgb(255, 0, 115);
+            color: white;
+            box-shadow: 0 0 15px blue;
+            cursor: pointer;
+        }
+
+        .container #form h1 {
+            color: rgb(221, 5, 185);
+            box-shadow: 0 0 15px;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+
+        #form i {
+            position: absolute;
+            margin: 13px 0 0 -25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" class="row">
+            <h1 class="col-12">Formulário</h1>
+            <div class="col-6">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="col-6">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="col-12">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="col-2">
+                <label for="ddd">DDD</label>
+                <input type="text" name="ddd" id="ddd" placeholder="00">
+            </div>
+            <div class="col-5">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="000-000000000">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="col-5">
+                <label for="tipo">Tipo</label>
+                <select name="tipo" id="tipo">
+                    <option value="1" selected>Whastapp</option>
+                    <option value="2">Residencial</option>
+                    <option value="3">Comercial</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label for="nascimento">Data-Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+                <i class="fa-solid fa-calendar"></i>
+            </div>
+            <div class="col-6">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                <i class="fa-solid fa-adress-card"></i>
+            </div>
+            <div class="col-12">
+                <label for="observacoes">Observações</label>
+                <textarea name="observacoes" id="observacoes"></textarea>
+            </div>
+            <div class="col-4">
+                <input type="submit" value="Guardar registo">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

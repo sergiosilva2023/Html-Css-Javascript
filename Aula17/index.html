@@ -5,18 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 17</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #333;
+        }
+
+        a:link,
+        a:visited,
+        a:active {
+            color: #333;
+            text-decoration: none;
+        }
+
+        body {
+            background-image: url("img/eye.png");
+            background-attachment: fixed;
+            /*background-repeat: no-repeat;
+            background-position: top right;*/
+        }
+
+        #main-header {
+            background-color: #fff;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        main {
+            margin-top: 100px;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .post {
+            background-color: #fff;
+            border-radius: 15px;
+            font-family: "Source Sans 3", sans-serif;
+            text-align: justify;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px;
+        }
+
+        .post-image img {
+            border-radius: 15px 15px 0 0;
+            width: 100%;
+        }
+
+        .post-content h2 {
+            font-family: "Oswald", sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .post-content p {
+            line-height: 1.5em;
+            padding: 20px;
+        }
+
+        .post-button {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .post-button a {
+            border: 1px solid orange;
+            padding: 10px 30px;
+            transition: all 0.5s;
+        }
+
+        .post-button a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .post-footer {
+            border-top: 1px solid #ddd;
+            font-style: italic;
+            margin: 0 20px;
+            padding-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <header id="main-header">
-        <h1><img src="img/logo-fatorial-java.png" alt="Logo da Empresa" width="100"></h1>
+        <h1><img src="img/logo-fatorial-java.png" alt="Logo da Empresa" width="150"></h1>
     </header>
     <main>
         <div class="container">
             <article class="post">
                 <div class="post-image">
                     <figure>
-                        <img src="img/JavaDesktop.jpg" alt="javadesktop" width="550">
+                        <img src="img/JavaDesktop.jpg" alt="javadesktop">
                     </figure>
                 </div>
                 <div class="post-content">
