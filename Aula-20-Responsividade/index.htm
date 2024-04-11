@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade CSS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .container {
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            background-color: yellow;
+        }
+
+        .breakpoint::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                width: 720px;
+            }
+
+            .breakpoint img {
+                float: left;
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            body {
+                background-color: rebeccapurple;
+            }
+
+            .container {
+                width: 1140px;
+            }
+
+            .breakpoint img {
+                float: left;
+                width: 25%;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Design Responsivo</h1>
+        <p>Design Responsivo é uma técnica de estruturação HTML e CSS, que consiste em Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Assumenda enim unde repellat praesentium est exercitationem totam alias id
+            quas a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam iusto perspiciatis praesentium odit at
+            quibusdam error, debitis sunt nesciunt, doloribus dignissimos ea a veritatis similique maxime totam.
+            Eveniet, labore?</p>
+        <h2>Breakpoints (Bootstrap)</h2>
+        <div class="breakpoint">
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img/bootstrap-breakpoints-1.jpeg" alt="Breakpoints 1">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img/bootstrap-breakpoints-2.jpeg" alt="Breakpoints 2">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img/bootstrap-breakpoints-3.jpeg" alt="Breakpoints 3">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img/bootstrap-breakpoints-4.jpeg" alt="Breakpoints 4">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img/bootstrap-breakpoints-5.jpeg" alt="Breakpoints 5">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
